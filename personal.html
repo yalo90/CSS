@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yalooke </title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg');
+      background-size: cover;
+      color: white;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero h2, .hero p {
+      animation: fadeInUp 1s ease-out 0.5s;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills div {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .services div {
+      text-align: left;
+      max-width: 300px;
+    }
+
+
+
+    .connect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .connect a {
+      background-color: #e74c3c;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .connect a:hover {
+      background-color: #c0392b;
+    }
+
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      animation: fadeIn 1s ease-out;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 11;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yalooke</h1>
+    <p>My Portfolio Website</p>
+  </header>
+
+  <nav>
+    <a href="ii.jpg">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#skills"></a>
+    <a href="#services">clssic</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact"> </a>
+  </nav>
+
+  <section id="hero" class="hero">
+    <img src="profile.jpg" alt="Your Name">
+    <h2>Yalooke</h2>
+    <p>Web Developer | Designer | Creative Thinker</p>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <img src="yal.jpg" alt="IMG_20220726_225754_349">
+    <img src="IMG_20220726_225754_349.jpg" alt="Project 2">
+    <img src="IMG_20230202_215130_095.jpg" alt="Project 3">
+    <img src="ii.jpg" alt="Project 4">
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo id ex fermentum facilisis. Quisque tincidunt ullamcorper ultricies...</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>React</div>
+      <div>Node.js</div>
+      <div>UI/UX Design</div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <div class="services">
+      <div>
+        <h3>Web Development</h3>
+        <p>Full-stack development of web applications tailored to your needs.</p>
+      </div>
+      <div>
+        <h3>UI/UX Design</h3>
+        <p>Designing intuitive and user-friendly interfaces for a great user experience.</p>
+      </div>
+      <div>
+        <h3>Consultation</h3>
+        <p>Providing expert advice on technology, design, and project strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="connect" class="section">
+    <h2>Connect</h2>
+    <div class="connect">
+      <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <!-- Add more social media links as needed -->
+    </div>
+  </section>
+
+  <section id="resume" class="resume section">
+    <

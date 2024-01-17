@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yalooke - Your Portfolio</title>
+  <style>
+    /* Existing styles remain unchanged */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .projects img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .projects img:hover {
+      transform: scale(1.05);
+    }
+
+    .blog {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .blog-post {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .blog-post p {
+      margin-top: 15px;
+      color: #f12121;
+    }
+
+    .connect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .connect a {
+      background-color: #e1a40b;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .connect a:hover {
+      background-color: #131ee6;
+    }
+
+    /* Existing styles remain unchanged */
+
+  </style>
+</head>
+<body>
+
+  <!-- Existing HTML structure remains unchanged -->
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <img src="project4.jpg" alt="Project 4">
+      <img src="project5.jpg" alt="Project 5">
+      <img src="project6.jpg" alt="Project 6">
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <div class="blog">
+      <div class="blog-post">
+        <h3>Blog Post Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo id ex fermentum facilisis. Quisque tincidunt ullamcorper ultricies...</p>
+        <p><strong>Published on:</strong> January 15, 2024</p>
+      </div>
+      <!-- Add more blog posts as needed -->
+    </div>
+  </section>
+
+  <section id="connect" class="section">
+    <h2>Connect</h2>
+    <div class="connect">
+      <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      <a href="https://github.com/yalo90" target="_blank">GitHub</a>
+      <!-- Add more social media links as needed -->
+    </div>
+  </section>
+
+  <!-- Existing HTML structure remains unchanged -->
+
+</body>
+</html>
